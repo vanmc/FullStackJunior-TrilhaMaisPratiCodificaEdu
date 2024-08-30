@@ -7,3 +7,12 @@ Além de ter o <a href = "https://nodejs.org/pt">NodeJs</a> junto ao <a href = "
 <p>Caso em algum momento o terminal pare de funcionar, exclua-o e inicie novamente pela extensão "Code Runner" para já executar o código desejado;</p>
 <p>As instruções e os códigos foram feitos em um S.O. Windows 10, teclado ABNT. Caso use algo diferente, faça as adaptações necessárias para conseguir rodar localmente os códigos. </p>
 
+## :paperclip: Listas de exercícios:
+<ol>
+  <li>
+    <a href = "https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/blob/main/module01-JS/listaDeExerc%C3%ADcios/listadeexercicios1.js">JavaScript: operações fundamentais, estruturas de controle condicional e de repetição.</a>
+  </li>
+  <li>
+    <a href = "https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/blob/main/module01-JS/listaDeExerc%C3%ADcios/listadeexercicios2.js">JavaScript: manipulação de objetos (for in, for of, forEach).</a>
+  </li>
+</ol>
