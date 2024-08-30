@@ -1,4 +1,3 @@
-<img src =">
 <h1 align = center>Trilha Dev. Full Stack Júnior </h1>
 <p>Nesse repositório você encontrará os códigos  realizados durante a trilha da <a href = "https://www.maisprati.com.br/">+PraTi</a> com a <a href = "https://www.codificaedu.com.br/">Codifica Edu</a>. Com a progressão do curso, novos exercícios e projetos relacionados também poderão ser encontrados por aqui! </p>
 <p><strong>Sobre o curso:</strong> "Este curso oferece uma experiência aprofundada em dois elementos essenciais do desenvolvimento web: front-end e back-end, proporcionando aos participantes as habilidades necessárias para criar aplicações web completas e funcionais.
