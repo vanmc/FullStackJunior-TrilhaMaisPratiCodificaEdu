@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Web Development, HTML, CSS, JavaScript, User Form"> 
+    <meta name="author" content="Vanessa Coutinho">
+    <meta name="description" content="Formulário de registro de usuário.">
+   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Formulário de PSE</title>
+</head>
+<body>
+
+    <main>
+        <section id="login-container">
+            <h2>Login</h2>
+            <br>
+            <form>
+                <label for="username">Usuário:</label>
+                <input type="text" id="input-field"  name="username" required  title="Nome de usuário é obrigatório">
+                <br><br>
+                <label for="userPassword" class="userPassword">Senha:</label>
+                <input type="password" id="input-field" required> <br> <br>
+                <button type="submit">Entrar</button>
+                <br><br>                    
+                    <p><a href="#" id="show-register">Não tem uma conta? Cadastre-se</a></p>
+                    <p><a href="#" id="show-recover">Esqueceu a senha?</a></p>
+            </form>
+        </section>
+    
+        <section id="register-container">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <label for="register-username">Nome de Usuário:</label>
+                <input type="text" id="input-field" required> 
+                <label for="register-email">Email:</label>
+                <input type="email" id="input-field" required> 
+                <label for="register-password">Senha:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Cadastrar</button> 
+                <p><a href="#" id="show-login">Já tem uma conta? Faça login</a></p> 
+            </form>
+        </section>
+    
+        <section id="recover-container">
+            <h2>Recuperar Senha</h2>
+            <form id="recover-form"> 
+                <label for="recover-email">Email:</label>
+                <input type="email" id="input-field" required> 
+                <button type="submit">Recuperar Senha</button> 
+                <p><a href="#" id="show-login-from-recover">Voltar para Login</a></p> 
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="http://github.com/vanmc">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/vanessamcgcoutinho/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
