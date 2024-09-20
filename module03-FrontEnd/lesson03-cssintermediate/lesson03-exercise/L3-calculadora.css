@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+table {
+    margin: auto;
+    background-color: #f7797d;
+    border-radius: 20px;
+    height: 28em;
+    width: 30em;
+    padding: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+}
+
+.tela {
+    font-family: "Handjet", sans-serif;
+    text-align: right;
+    height: 2em;
+    width: 100%;
+    max-width: 35em;
+    margin: 1em auto;
+    background-color: rgba(245, 245, 245, 0.486);
+    color: rgb(8, 8, 8);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+    font-size: 3em;
+}
+
+
+.botaoLimpar {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    background-color: #ff2755;
+    transition: background-color 0.1s ease-in-out;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Handjet", sans-serif;
+}
+
+.botaoLimpar:hover {
+    background-color: rgb(228, 19, 54);
+}
+
+.botaoLimpar:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.botoesEspeciais {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    background-color: #FBD786;
+    transition: background-color 0.1s ease-in-out;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Handjet", sans-serif;
+}
+
+.botoesEspeciais:hover {
+    background-color: #f3c353;
+}
+
+.botoesEspeciais:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.botoesOperadores {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    background-color:  #c471ed;
+    transition: background-color 0.1s ease-in-out;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Handjet", sans-serif;
+}
+
+.botoesOperadores:hover {
+    background-color: #af51df
+}
+
+.botoesOperadores:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.botoesNumeros {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    background-color: whitesmoke;
+    transition: background-color 0.1s ease-in-out;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Handjet", sans-serif;
+}
+
+.botoesNumeros:hover {
+    background-color: #c9e2d3;
+}
+
+.botoesNumeros:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.botaoCalcular {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    background-color: #a8ff78;
+    transition: background-color 0.1s ease-in-out;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Handjet", sans-serif;
+}
+
+.botaoCalcular:hover {
+    background-color: #84f548;
+}
+
+.botaoCalcular:active {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 90%; /* Ajusta a largura para caber na tela */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+
+    .screen {
+        height: 3em; /* Ajusta a altura da tela */
+    }
+
+    button {
+        flex: 1 0 45%; /* Ajusta os botões para ocupar 45% do espaço */
+        margin: 5px 0; /* Adiciona margem vertical */
+    }
+}
