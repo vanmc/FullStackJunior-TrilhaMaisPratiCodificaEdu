@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./L3-calculadora.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <title>L3-calculadora</title>
+</head>
+<body>
+    <form name="formulario">
+        <table>
+            <tr>
+            <!-- disabled: o campo de entrada está desabilitado e não poderá ser editado nem enviado. readonly: permite somente a leitura -->
+                <td colspan="4"><input type="text" maxlength="15" name="tela" class="tela" disabled></td>
+            </tr>
+            <tr>
+                <td class="botoes"><input type="button" value="C" class="botaoLimpar" onclick="limparTela()"></td>
+                <td class="botoes"><input type="button" value="del" class="botoesEspeciais" onclick="deletar()"></td>
+                <td class="botoes"><input type="button" value="." class="botoesEspeciais" onclick="inserir('.')"></td>
+                <td class="botoes"><input type="button" value="/" class="botoesOperadores" onclick="inserir('/')"></td>
+            </tr>
+            <tr>
+                <td class="botoes"><input type="button" value="7" class="botoesNumeros" onclick="inserir(7)"></td>
+                <td class="botoes"><input type="button" value="8" class="botoesNumeros" onclick="inserir(8)"></td>
+                <td class="botoes"><input type="button" value="9" class="botoesNumeros" onclick="inserir(9)"></td>
+                <td class="botoes"><input type="button" value="*" class="botoesOperadores" onclick="inserir('*')"></td>
+            </tr>
+            <tr>
+                <td class="botoes"><input type="button" value="4" class="botoesNumeros" onclick="inserir(4)"></td>
+                <td class="botoes"><input type="button" value="5" class="botoesNumeros" onclick="inserir(5)"></td>
+                <td class="botoes"><input type="button" value="6" class="botoesNumeros" onclick="inserir(6)"></td>
+                <td class="botoes"><input type="button" value="-" class="botoesOperadores" onclick="inserir('-')"></td>
+            </tr>
+            <tr>
+                <td class="botoes"><input type="button" value="1" class="botoesNumeros" onclick="inserir(1)"></td>
+                <td class="botoes"><input type="button" value="2" class="botoesNumeros" onclick="inserir(2)"></td>
+                <td class="botoes"><input type="button" value="3" class="botoesNumeros" onclick="inserir(3)"></td>
+                <td class="botoes"><input type="button" value="+" class="botoesOperadores" onclick="inserir('+')"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="botoes"><input type="button" value="0" class="botoesNumeros" onclick="inserir(0)"></td>
+                <td class="botoes"><input type="button" class="botaoCalcular" value="=" onclick="calcularTotal()"></td>
+            </tr>
+        </table>
+    </form>
+
+<script src="./L3-calculadora.js"></script>
+</body>
+</html>
