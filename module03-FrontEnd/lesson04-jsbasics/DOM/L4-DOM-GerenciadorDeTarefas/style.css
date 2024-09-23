@@ -1,0 +1,114 @@
+body {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    height: fit-content;
+    width: auto;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, rgb(255, 187, 236) 100%);
+    padding: 3em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.8em;
+}
+
+
+#task-input { 
+    display: block;
+    width: 97.8%;
+    border-radius: 10px;
+    padding: 0.4em;
+    border: none;
+    margin-bottom: 0.8em;
+}
+
+#add-task-btn {
+    cursor: pointer;
+    width: 100%;
+    padding: 0.4em;
+    background-color: #FFBBEC;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#add-task-btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.remove-btn, .edit-btn {
+    margin-left: 12px;
+    cursor: pointer;
+    padding: 0.3em;
+    border-radius: 10px;
+}
+
+.remove-btn {
+    color: #fa8877;
+    border: 1px solid;
+}
+
+.edit-btn {
+    color: #c45bf5;
+    border: 1px solid;
+}
+
+.filter-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 0.4em;
+    width: 10rem;
+    margin: 0.1em auto;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.filter-btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+#filter-all {
+    background-color: #FBDA61 ;
+}
+
+#filter-completed {
+    background-color: #2BFF88 ;
+}
+
+#filter-not-completed {
+    background-color: #FF9A8B ;
+}
+
+li {
+    text-align: left;
+    list-style: square;
+    margin: 1em auto;
+    word-wrap: break-word;
+    max-width: 40em;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
