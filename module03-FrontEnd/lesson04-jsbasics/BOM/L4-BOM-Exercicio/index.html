@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Brincando com o BOM</title>
+</head>
+<body>
+    <div id="container">
+        <p id="texto">Aqui há um texto!</p>
+        <button onclick="changeText()" id="btnChange">Deseja alterar o texto?</button>
+        <button onclick="startCounting()" id="btnStart">Iniciar contador</button>
+        <button onclick="window.history.back()" id="btnBack">Voltar no navegador?</button>
+        <button onclick="window.history.forward()" id="btnForward">Avançar no navegador?</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- Crie um botão que, ao ser clicado, altere o texto na página após 3s (usando setTimeout). Adicione outro botão que exiba um contador que atualiza a cada segundo (usando setInterval). Crie botões 'Voltar' e "Avançar que utilizam o histórico de navegação do navegador (usando window.history.back() e window.history.forward()) -->

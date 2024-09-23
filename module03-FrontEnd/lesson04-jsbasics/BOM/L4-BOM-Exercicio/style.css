@@ -1,0 +1,88 @@
+body {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#container {
+    text-align: center;
+    display: block;
+    background-color: rgba(49, 210, 145, 1);
+    padding: 5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.3em;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 2em;
+}
+
+button {
+    width: fit-content;
+    padding: 0.5em;
+    font-size: 0.9em;
+    border-radius: 12px;
+    margin: 0.2em auto;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 0.5em;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+#btnChange, .btnStop, .btnClean {
+    background-color: rgba(196, 217, 217, 0.69);
+
+}
+#btnStart, .btnStop, .btnClean {
+    background-color: rgb(250, 143, 135);
+}
+
+.pCounter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.2em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #container {
+        padding: 2em;
+    }
+
+    #texto {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 0.4em;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 1em;
+    }
+
+    #texto {
+        font-size: 0.8em;
+    }
+
+    button {
+        padding: 0.3em;
+        font-size: 0.7em;
+    }
+}
