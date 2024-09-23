@@ -45,7 +45,6 @@ function startCounting() {
         container.appendChild(counter) // Adiciona o contador à div container
     }
 
-    number = 0
     countingInterval = setInterval(() => {
         counter.innerHTML = `${number}`
         number++
@@ -69,7 +68,7 @@ function stopCounting() {
     if (countingInterval) {
         clearInterval(countingInterval)
         countingInterval = null // Reseta o intervalo
-        btnStart.innerHTML = 'Reiniciar contador'
+        btnStart.innerHTML = 'Continuar contagem' // Alterado
 
         // Remove o botão de limpar se existir
         if (btnClean) {
@@ -108,3 +107,8 @@ function stopCounting() {
 
 // Adiciona o evento de clique ao botão de iniciar
 btnStart.addEventListener('click', startCounting)
+
+// Função para redirecionar a página
+function redirectTo(url) {
+    window.location.href = url
+}
