@@ -149,6 +149,63 @@ aside > a:active {
     box-shadow: inset 1px 1px 2px 1px #4d484a;
 }
 
+#headerReferenciasPage {
+    border-bottom: 1px solid #201d1e21;
+}
+
+#referenciasPage, #historiaPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-bg);
+    padding: 2em;
+    margin: auto 0;
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+}
+
+#historiaPage {
+    width: 100%;
+}
+
+#referenciasPage > h1 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-family: var(--highlight-font);
+    color: var(--text-lighterbg-color);
+    font-size: 1.5em;
+}
+
+#referenciasPage ol li {
+    font-family: var(--main-text-font);
+    color: var(--text-darkerbg-color);
+    font-size: 1em;
+    margin-bottom: 0.2em;
+    text-align: justify;
+    list-style: upper-roman;
+}
+
+#referenciasPage > ol li a {
+    text-decoration: none;
+    color: #564D50;
+}
+
+#historiaPage > p {
+    text-align: justify;
+    font-family: var(--main-text-font);
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#historiaPage > .quote {
+    font-weight: bold;
+}
+
+
 footer {
     width: 100%;
     height: fit-content;
