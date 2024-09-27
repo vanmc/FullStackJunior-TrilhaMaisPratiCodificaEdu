@@ -1,20 +1,24 @@
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Variáveis de cores e fontes */
 :root {
     --highlight-font: "Handjet", sans-serif;
     --container-bg: #D1604D;
     --highlight-bg: #201D1E;
+    --body-bg: #7EBDC2;
     --text-darkerbg-color: #F8F5F1;
     --text-lighterbg-color: #201D1E;
     --main-text-font: "Dosis", sans-serif;
 }
 
+/* Estilos do body */
 body {
-    background-color: #7EBDC2;
+    background-color: var(--body-bg);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -24,10 +28,13 @@ body {
     overflow: auto;
 }
 
+/* Estilos da página principal */
+/* Estilos do header */
 header {
-    height: 4em;
+    height: fit-content;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 1em 4.5em;
@@ -36,14 +43,16 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: #7EBDC2;
+    background-color: var(--body-bg);
     margin: 0;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.096);
 }
 
 header > img {
     height: auto;
     max-height: 4em;
     width: auto;
+    margin-bottom: 0.3em;
 }
 
 header a {
@@ -62,20 +71,22 @@ header a:hover {
     background-color: #4EA1A6;
 }
 
+/* Estilos do container principal */
 #container {
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--container-bg);
-    padding: 5em 2em 4em 2em;
+    padding: 10em 2em 4em 2em;
 }
 
+/* Estilos das seções dentro do container */
 #container > section {
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     width: 70%;
@@ -100,7 +111,7 @@ section > img.active {
     display: block;
 }
 
-
+/* Estilos do aside */
 #container > aside {
     display: flex;
     flex-direction: column;
@@ -115,14 +126,13 @@ section > img.active {
     border-radius: 2em;
     background-color: var(--highlight-bg);
     box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.123);
-    
 }
 
 aside > h1 {
     margin-bottom: 0.5em;
     text-transform: uppercase;
     font-family: var(--highlight-font);
-    color: var(--text-darkerbg-color) ;
+    color: var(--text-darkerbg-color);
 }
 
 aside > a {
@@ -149,18 +159,20 @@ aside > a:active {
     box-shadow: inset 1px 1px 2px 1px #4d484a;
 }
 
+/* Estilos da página de referências */
 #headerReferenciasPage {
     border-bottom: 1px solid #201d1e21;
 }
 
-#referenciasPage, #historiaPage {
+#referenciasPage, .historiaPage {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--container-bg);
     padding: 2em;
-    margin: auto 0;
+    margin: auto;
     position: relative;
     width: 80%;
     height: fit-content;
@@ -168,12 +180,8 @@ aside > a:active {
     border-radius: 0.5em;
 }
 
-#historiaPage {
-    width: 100%;
-}
-
 #referenciasPage > h1 {
-    margin-bottom: 1em;
+    margin: 2em auto;
     text-transform: uppercase;
     font-family: var(--highlight-font);
     color: var(--text-lighterbg-color);
@@ -194,18 +202,53 @@ aside > a:active {
     color: #564D50;
 }
 
-#historiaPage > p {
+/* Estilos da página minha história */
+.historiaPage {
+    height: 100%;
+    width: 100%;
+    margin-top: 3.5em;
+}
+
+.historiaPage .mainText {
+    margin: 3em auto;
+}
+
+.historiaPage .mainText > p {
     text-align: justify;
     font-family: var(--main-text-font);
     text-align: center;
     line-height: 1.5em;
 }
 
-#historiaPage > .quote {
+.historiaPage .mainText > .quote {
     font-weight: bold;
 }
 
+.historiaPage .gridImgs {
+    display: grid;
+    grid-template-columns: repeat(5, 6.4em);
+    grid-template-rows: repeat(2, 6.4em);
+    gap: 0.8em;
+    justify-content: center;
+    width: 100%;
+}
 
+.historiaPage .gridImgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.historiaPage .gridImgs img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border-radius: 20%;
+}
+
+/* Estilos do footer */
 footer {
     width: 100%;
     height: fit-content;
@@ -224,6 +267,7 @@ footer > p {
     font-family: var(--highlight-font);
 }
 
+/* Estilos dos links sociais */
 #socialLinks {
     text-align: center;
     display: flex;
@@ -231,7 +275,6 @@ footer > p {
     justify-content: center;
     margin: 1em 0 1em 0;
 }
-
 
 #socialLinks > a {
     width: auto;
@@ -251,4 +294,3 @@ footer > p {
 #socialLinks > a:hover {
     background-color: rgba(239, 230, 221, 0.479);
 }
-
