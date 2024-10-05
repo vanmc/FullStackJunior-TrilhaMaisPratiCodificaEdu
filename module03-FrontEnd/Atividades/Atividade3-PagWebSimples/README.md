@@ -3,7 +3,7 @@
 ## Objetivo
 Desenvolver uma página web utilizando HTML e CSS que contenha os principais elementos de uma estrutura de site.
 
-### [Acesse a página online por aqui!](https://adoteumanimal.vercel.app/)
+### [Acesse a página online por aqui!](https://adoteumamigo.vercel.app/)
 
 ![Logo do Site](./assets/website-logo.png)
 
