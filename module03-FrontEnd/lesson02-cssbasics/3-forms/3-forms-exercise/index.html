@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro E-Commerce</title>
+</head>
+<body>
+    <form>
+        <h1>Cadastre-se:</h1>
+        <label for="name">Nome Completo:</label>
+        <input class="main-input" type="text" id="name" name="name" placeholder="Fulano da Silva">
+        <label for="email">Endereço de e-mail:</label>
+        <input class="main-input" type="text" id="email" name="email" placeholder="fulanodasilva@email.com">
+        <label for="password">Senha:</label>
+        <input class="main-input" type="password" id="password" name="password">
+        <label for="country">País de origem:</label>
+        <select name="country" id="country">
+            <option value="none"></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colômbia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Argentina">Argentina</option>
+        </select>
+        <fieldset>
+            <legend>Gênero:</legend>
+            <input type="radio" id="gender" name="gender">
+            <label class="fieldset-label" for="Feminino">Feminino</label>
+            <input type="radio" id="gender" name="gender">
+            <label class="fieldset-label" for="Masculino">Masculino</label>
+            <input type="radio" id="gender" name="gender">
+            <label class="fieldset-label" for="NaoBinario">Não-Binário</label>            
+            <br>
+            <input type="radio" id="gender" name="gender">
+            <textarea class="fieldset-label" name="gender" id="gender" placeholder="Outro:"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Aceitar os termos de compromisso:</legend>
+            <input type="checkbox" id="termos-compromisso-email" name="termos-compromisso-email" value="termos-compromisso-email">
+            <label class="fieldset-label" for="termos-compromisso-email">Aceito os <a href="">termos de compromisso</a> e receber atualizações em meu e-mail.</label>
+            <br>
+            <input type="checkbox" id="termos-compromisso-simples" name="termos-compromisso-simples" value="termos-compromisso-simples">
+            <label class="fieldset-label" for="termos-compromisso-simples">Aceito os <a href="">termos de compromisso</a>, mas não desejo receber atualizações em meu e-mail.</label>
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    
+</body>
+</html>
