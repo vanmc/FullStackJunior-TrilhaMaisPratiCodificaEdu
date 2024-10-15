@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Buscador de CEP</title>
+</head>
+<body>
+    <main>
+        <h1>Consulta de endereço</h1>
+        <table class="tabelaCEP">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="cep" id="cep" placeholder="Digite o CEP:" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value)" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="tabelaResultados">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="rua" id="rua" placeholder="Logradouro" readonly>
+                    </td>
+                    <td>
+                        <input type="text" name="bairro" id="bairro"placeholder="Bairro" readonly>
+                    </td>
+                    <td>
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade" readonly>
+                    </td>
+                    <td>
+                        <input type="text" name="estado" id="uf" placeholder="Estado" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    </main>
+
+<script src="./app.js"></script>
+</body>
+</html>
