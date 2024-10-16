@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-text: #163670;
+    --secondary-color-text: #C9C9A2;
+    --color-primary-light: #136cc9;
+    --color-primary-dark: #020C1D;
+    --color-secondary-light: #900938;
+    --color-secondary-dark: #361029;
+    --color-accent: #60092F;
+    --primary-font-family: "Comfortaa", sans-serif;
+    --secondary-font-family: "Nunito", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.firstpage-container {
+    height: 100vh;
+    width: 100%;
+    background: url('./assets/img-home-2.jpg') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.firstpage-container > .btnPageDown {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2em;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-accent);
+    color: var(--secondary-color-text);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.firstpage-container > .btnPageDown:hover {
+    background-color: var(--color-secondary-light);
+}
+
+.btnspan {
+    font-size: 2em;
+}
+
+.firstpage-container > .firstpageTitle {
+    color: var(--color-secondary-light);
+    background-color: #020C1D;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-family: var(--primary-font-family);
+}
+
+.firstpage-container > .firstpagSpan {
+    color: var(--secondary-color-text);
+    margin: 1em;
+    margin-top: 0.1em;
+    font-size: 1.5em;
+    font-family: var(--secondary-font-family);
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: var(--primary-font-family);
+    height: 5em;
+}
+
+header .nav-link:hover {
+    color: var(--color-primary-light);
+}
+
+header .btn {
+    background-color: var(--color-secondary-light); 
+    color: white; 
+    border: none; 
+    font-family: var(--primary-font-family); 
+}
+
+.about-carousel {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100%; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: calc(100vh - 5em);
+    object-fit: cover; 
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+.carousel-caption > h5 {
+    font-family: var(--primary-font-family);
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--color-secondary-light);
+}
+
+.carousel-caption > p {
+    font-family: var(--secondary-font-family);
+    font-size: 1.1em;
+    color: #fff;
+}
