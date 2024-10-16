@@ -65,10 +65,10 @@ body {
     font-family: var(--primary-font-family);
 }
 
-.firstpage-container > .firstpagSpan {
+.firstpage-container > .firstpageSpan {
     color: var(--secondary-color-text);
     margin: 1em;
-    margin-top: 0.1em;
+    margin-top: 0;
     font-size: 1.5em;
     font-family: var(--secondary-font-family);
 }
@@ -80,6 +80,7 @@ header {
     z-index: 1000;
     font-family: var(--primary-font-family);
     height: 5em;
+    margin: 0;
 }
 
 header .nav-link:hover {
@@ -93,9 +94,19 @@ header .btn {
     font-family: var(--primary-font-family); 
 }
 
-.about-carousel {
-    height: 100vh;
+.about-container {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.about-carousel {
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .carousel {
@@ -103,7 +114,7 @@ header .btn {
 }
 
 .carousel-item {
-    height: 100%; 
+    height: 100%;
 }
 
 .carousel-item img {
@@ -129,4 +140,47 @@ header .btn {
     font-family: var(--secondary-font-family);
     font-size: 1.1em;
     color: #fff;
+}
+
+.about-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/bg1.svg) no-repeat center center / cover;
+}
+
+.about-content .about-text {
+    width: 60%;
+    margin-right: 3em;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.about-content .about-text h1 {
+    font-weight: bold;
+    font-family: var(--primary-font-family);
+    color: var(--color-primary-dark);
+}
+
+
+.about-content .about-imgs img {
+    display: none;
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+}
+
+.about-content .about-imgs img:hover {
+    transform: scale(1.2);
+}
+
+.about-imgs img.active {
+    display: block;
 }

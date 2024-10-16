@@ -19,18 +19,20 @@
     <title>RetroRentals</title>
 </head>
 <body>
-    <div class="firstpage-container">
+    <div class="firstpage-container" id="hey">
         <span id="element" class="firstpageTitle"></span>
-        <span class="firstpagSpan">Sente falta de poder alugar jogos em mídia física para seus consoles?</span>
+        <span class="firstpageSpan">Sente falta de poder alugar jogos em mídia física para seus consoles?</span>
         <button onclick="movePageDown()" class="btnPageDown"><span class="btnspan">↓</span></button>
     </div>
     <main>
         <header class="p-2 bg-dark text-white w-100">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center">
-                    <img src="./assets/logo.png" alt="Logo" style="width: 5em; height: auto; margin-right: 30px;">
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+                    <a href="#hey">
+                        <img src="./assets/logo.png" alt="Logo" style="width: 5em; height: auto; margin-right: 30px;">
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
+                        <li><a href="#about" class="nav-link px-2 text-white">Sobre</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">Serviços</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">Testemunhos</a></li>
                         <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
@@ -42,57 +44,91 @@
                 </div>
             </div>
         </header>
-
-        <div class="about-carousel">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/carousel/carousel3.png" class="d-block" alt="Imagem colorida de um console Dreamcast.">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Vamos jogar?</h5>
-                            <p>Desperte suas memórias jogando os clássicos que moldaram a indústria. Alugue jogos em mídia física e mergulhe na nostalgia!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./assets/carousel/carousel2.jpg" class="d-block" alt="Imagem colorida de quatro mulheres usando um computador portátil.">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Assinatura que encaixa no bolso:</h5>
-                        <p>Escolha entre assinaturas flexíveis e receba jogos novos de acordo com seu tempo. Personalize sua seleção por estilo e console e descubra novos clássicos!</p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/carousel/carousel1.jpg" class="d-block" alt="Imagem colorida de um console e diversos jogos.">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Experiência autêntica:</h5>
-                            <p>Nada se compara à sensação de jogar em um console original. Receba jogos selecionados para o seu estilo e console e aproveite a experiência autêntica e sustentável, promovendo a rotatividade de produtos já fabricados!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/carousel/carousel4.png" class="d-block" alt="Imagem colorida amigos jogando juntos Videogames.">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Seja surpreendido:</h5>
-                            <p>Experimente jogos raros e difíceis de encontrar. Nossa coleção tem algo para todos os fãs de consoles antigos. Assine e comece a explorar sozinho ou junto a amigos!</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
+        
         <div class="about-container">
-            <h1>Sobre o serviço</h1>
-            <p>Ei, você já parou para pensar em como era incrível jogar aqueles clássicos que marcaram nossa infância? Com nosso serviço de aluguel de jogos em mídia física, você pode reviver essas memórias de uma forma super fácil e divertida. Temos assinaturas flexíveis que se ajustam à sua rotina, então você pode receber jogos novos sempre que quiser, do jeito que preferir.
+            <div class="about-carousel">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                    </ol>
 
-                Imagina só: você escolhe os jogos que sempre quis jogar, ou até aqueles raros que são praticamente lendas urbanas entre os colecionadores. E o melhor? Estamos ajudando o planeta ao promover a rotatividade de jogos já existentes, o que significa menos desperdício e mais diversão para todos.
-                
-                Nada se compara à sensação de jogar em um console original, e aqui você vai encontrar exatamente isso. Junte-se a nós nessa jornada nostálgica, explore novos clássicos e compartilhe essa experiência com amigos ou até mesmo jogue sozinho. Vamos juntos redescobrir a magia dos videogames antigos!</p>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/carousel/carousel3.png" class="d-block" alt="Imagem colorida de um console Dreamcast.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Vamos jogar?</h5>
+                                <p>Desperte suas memórias jogando os clássicos que moldaram a indústria. Alugue jogos em mídia física e mergulhe na nostalgia!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./assets/carousel/carousel2.jpg" class="d-block" alt="Imagem colorida de quatro mulheres usando um computador portátil.">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Assinatura que encaixa no bolso:</h5>
+                            <p>Escolha entre assinaturas flexíveis e receba jogos novos de acordo com seu tempo. Personalize sua seleção por estilo e console e descubra novos clássicos!</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/carousel/carousel1.jpg" class="d-block" alt="Imagem colorida de um console e diversos jogos.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Experiência autêntica:</h5>
+                                <p>Nada se compara à sensação de jogar em um console original. Receba jogos selecionados para o seu estilo e console e aproveite a experiência autêntica e sustentável, promovendo a rotatividade de produtos já fabricados!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/carousel/carousel4.png" class="d-block" alt="Imagem colorida amigos jogando juntos Videogames.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Seja surpreendido:</h5>
+                                <p>Experimente jogos raros e difíceis de encontrar. Nossa coleção tem algo para todos os fãs de consoles antigos. Assine e comece a explorar sozinho ou junto a amigos!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="about-content" id="about">
+                <div class="about-text">
+                    <h1>Nos conheça</h1>
+                    <p>Ei, você já parou para pensar em como era incrível jogar aqueles clássicos que marcaram nossa infância? Com nosso serviço de aluguel de jogos em mídia física, <strong>você pode reviver essas memórias de uma forma super fácil e divertida</strong>. Temos assinaturas flexíveis que se ajustam à sua rotina, então você pode receber jogos novos sempre que quiser, do jeito que preferir.</p>
+                    
+                    <p>Imagina só: você escolhe os jogos que sempre quis jogar, ou até aqueles raros que são praticamente lendas urbanas entre os colecionadores. E o melhor? Estamos ajudando o planeta ao promover a <strong>rotatividade de jogos já existentes</strong>, o que significa menos desperdício e mais diversão para todos.</p>
+                    
+                    <p>Nada se compara à sensação de jogar em um console original, e aqui você vai encontrar exatamente isso. Junte-se a nós nessa jornada nostálgica, explore novos clássicos e compartilhe essa experiência com amigos ou até mesmo jogue sozinho. <strong>Vamos juntos redescobrir a magia dos videogames antigos!</strong></p>
+                </div>
+                <div class="about-imgs">
+                    <img src="./assets/gamecovers/apollojusticeaceattorneyds.jpg" alt="Apollo Justice: Ace Attorney (DS)" class="active">
+                    <img src="./assets/gamecovers/castlevaniagba.jpg" alt="Castlevania (GBA)">
+                    <img src="./assets/gamecovers/chronotriggerds.jpg" alt="Chrono Trigger (DS)">
+                    <img src="./assets/gamecovers/crashbandicoot2ps1.jpg" alt="Crash Bandicoot 2 (PS1)">
+                    <img src="./assets/gamecovers/crashbandicoot3ps1.jpg" alt="Crash Bandicoot 3 (PS1)">
+                    <img src="./assets/gamecovers/crashbandicootps1.jpg" alt="Crash Bandicoot (PS1)">
+                    <img src="./assets/gamecovers/crashteamracingps1.jpg" alt="Crash Team Racing (PS1)">
+                    <img src="./assets/gamecovers/donkeykongcountrygba.jpg" alt="Donkey Kong Country (GBA)">
+                    <img src="./assets/gamecovers/dragonquestixds.jpg" alt="Dragon Quest IX (DS)">
+                    <img src="./assets/gamecovers/godofwarps2.jpg" alt="God of War (PS2)">
+                    <img src="./assets/gamecovers/gtachinatownwarsds.jpg" alt="GTA: Chinatown Wars (DS)">
+                    <img src="./assets/gamecovers/gtasanandreasps2.jpg" alt="GTA: San Andreas (PS2)">
+                    <img src="./assets/gamecovers/mariokartds.jpg" alt="Mario Kart (DS)">
+                    <img src="./assets/gamecovers/medalofhonorfrontlineps2.jpg" alt="Medal of Honor: Frontline (PS2)">
+                    <img src="./assets/gamecovers/midnightlub3dubedps2.jpg" alt="Midnight Club 3: Dub Edition (PS2)">
+                    <img src="./assets/gamecovers/needforspeedunderground2ps2.jpg" alt="Need for Speed: Underground 2 (PS2)">
+                    <img src="./assets/gamecovers/okamips2.jpg" alt="Okami (PS2)">
+                    <img src="./assets/gamecovers/pokemonconquest.jpg" alt="Pokemon Conquest">
+                    <img src="./assets/gamecovers/pokemonfireredgba.jpg" alt="Pokemon FireRed (GBA)">
+                    <img src="./assets/gamecovers/pokemonrubygba.jpg"                
+                </div>
+            </div>
         </div>
     </main>
 
