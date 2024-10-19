@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link rel="icon" href="./assets/logo-retrorentals.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,19 +37,19 @@
                     </a>
                     <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center">
                         <li><a href="#about" class="nav-link px-2 text-white">Sobre</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Serviços</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Testemunhos</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+                        <li><a href="#services" class="nav-link px-2 text-white">Serviços</a></li>
+                        <li><a href="#testimonials" class="nav-link px-2 text-white">Testemunhos</a></li>
                     </ul>
                     <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2">Login</button>
-                        <button type="button" class="btn btn-warning">Sign-up</button>
+                        <a href="#contact">
+                            <but ton type="button" class="btn btn-outline-light me-2">Entre em contato</button>
+                            </a>
                     </div>
                 </div>
             </div>
         </header>
         
-        <div class="about-container">
+        <section class="about-container">
             <div class="about-carousel">
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <ol class="carousel-indicators">
@@ -106,33 +110,178 @@
                     
                     <p>Nada se compara à sensação de jogar em um console original, e aqui você vai encontrar exatamente isso. Junte-se a nós nessa jornada nostálgica, explore novos clássicos e compartilhe essa experiência com amigos ou até mesmo jogue sozinho. <strong>Vamos juntos redescobrir a magia dos videogames antigos!</strong></p>
                 </div>
-                <div class="about-imgs">
-                    <img src="./assets/gamecovers/apollojusticeaceattorneyds.jpg" alt="Apollo Justice: Ace Attorney (DS)" class="active">
-                    <img src="./assets/gamecovers/castlevaniagba.jpg" alt="Castlevania (GBA)">
-                    <img src="./assets/gamecovers/chronotriggerds.jpg" alt="Chrono Trigger (DS)">
-                    <img src="./assets/gamecovers/crashbandicoot2ps1.jpg" alt="Crash Bandicoot 2 (PS1)">
-                    <img src="./assets/gamecovers/crashbandicoot3ps1.jpg" alt="Crash Bandicoot 3 (PS1)">
-                    <img src="./assets/gamecovers/crashbandicootps1.jpg" alt="Crash Bandicoot (PS1)">
-                    <img src="./assets/gamecovers/crashteamracingps1.jpg" alt="Crash Team Racing (PS1)">
-                    <img src="./assets/gamecovers/donkeykongcountrygba.jpg" alt="Donkey Kong Country (GBA)">
-                    <img src="./assets/gamecovers/dragonquestixds.jpg" alt="Dragon Quest IX (DS)">
-                    <img src="./assets/gamecovers/godofwarps2.jpg" alt="God of War (PS2)">
-                    <img src="./assets/gamecovers/gtachinatownwarsds.jpg" alt="GTA: Chinatown Wars (DS)">
-                    <img src="./assets/gamecovers/gtasanandreasps2.jpg" alt="GTA: San Andreas (PS2)">
-                    <img src="./assets/gamecovers/mariokartds.jpg" alt="Mario Kart (DS)">
-                    <img src="./assets/gamecovers/medalofhonorfrontlineps2.jpg" alt="Medal of Honor: Frontline (PS2)">
-                    <img src="./assets/gamecovers/midnightlub3dubedps2.jpg" alt="Midnight Club 3: Dub Edition (PS2)">
-                    <img src="./assets/gamecovers/needforspeedunderground2ps2.jpg" alt="Need for Speed: Underground 2 (PS2)">
-                    <img src="./assets/gamecovers/okamips2.jpg" alt="Okami (PS2)">
-                    <img src="./assets/gamecovers/pokemonconquest.jpg" alt="Pokemon Conquest">
-                    <img src="./assets/gamecovers/pokemonfireredgba.jpg" alt="Pokemon FireRed (GBA)">
-                    <img src="./assets/gamecovers/pokemonrubygba.jpg"                
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Castlevania GBA.jpg" alt="Castlevania GBA">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Castlevania Symphony.jpg" alt="Castlevania Symphony">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Crash Team Racing.jpg" alt="Crash Team Racing">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Crash Warped PS1.jpg" alt="Crash Warped PS1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/GTA Chinatown.jpg" alt="GTA Chinatown">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Mario Kart DS.jpg" alt="Mario Kart DS">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Marvel vs Capcom 2.jpg" alt="Marvel vs Capcom 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Medal Of Honor.jpg" alt="Medal Of Honor">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Midnight Club 3.jpg" alt="Midnight Club 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Need For Speed 2.jpg" alt="Need For Speed 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Okami.jpg" alt="Okami">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Pokemon FireRed GBA.jpg" alt="Pokemon FireRed GBA">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Pokemon Ruby GBA.jpg" alt="Pokemon Ruby GBA">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Pokemon SoulSilver.jpg" alt="Pokemon SoulSilver">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Resident Evil 2.jpg" alt="Resident Evil 2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Resident Evil 3.jpg" alt="Resident Evil 3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Resident Evil 4.jpg" alt="Resident Evil 4">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Resident Evil Code Veronica.jpg" alt="Resident Evil Code Veronica">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/Silent Hill PS1.jpg" alt="Silent Hill PS1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/gamecovers/SuperMarioWorld GBA.jpg" alt="Super Mario World GBA">  
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+
+                            <div class="swiper-button-next"></div>
+
+                        </div>
                 </div>
             </div>
-        </div>
+        </section>
+            
+            <section class="services-container" id="services">
+                <h1>Escolha entre várias opções e altere sempre que quiser!</h1>
+                <div class="container-cards mx-auto p-6">
+                    <div class="m-0 p-6 bg-dark border rounded-lg shadow-lg transition-transform duration-300 ease-in-out group hover:scale-105">
+                        <img src="./assets/services/silverpass.png" alt="Silver Game Pass" class="w-full h-48 object-cover rounded-t-lg">
+                        <h2 class="text-xl font-bold mt-4 text-white">Silver Pass</h2>
+                        <p class="mt-2 text-gray-300">Aluguel de 1 jogo por duração desejada (mensal, trimestral ou semestral), com frete grátis para entrega e devolução. Escolha o jogo que deseja para o mês ou escolha a temática do jogo e nós o surpreenderemos!</p>
+                        <p class="mt-2 text-lg font-semibold text-gray-200">Valor: <br> a partir de R$ 29,90</p>
+                    </div>
+                
+                    <div class="m-0 p-6 bg-dark border rounded-lg shadow-lg transition-transform duration-300 ease-in-out group hover:scale-105">
+                        <img src="./assets/services/goldpass.png" alt="Gold Game Pass" class="w-full h-48 object-cover rounded-t-lg">
+                        <h2 class="text-xl font-bold mt-4 text-white">Gold Pass</h2>
+                        <p class="mt-2 text-gray-300">Aluguel de até 5 jogos por duração (mensal, trimestral ou semestral), com frete grátis para entrega e devolução. Escolha quais jogos deseja receber entre os disponíveis ou escolha a temática e conheça novos jogos!</p>
+                        <p class="mt-2 text-lg font-semibold text-gray-200">Valor: <br> a partir de R$ 89,90</p>
+                    </div>
+                
+                    <div class="m-0 p-6 bg-dark border rounded-lg shadow-lg transition-transform duration-300 ease-in-out group hover:scale-105">
+                        <img src="./assets/services/platinumpass.png" alt="Platinum Game Pass" class="w-full h-48 object-cover rounded-t-lg">
+                        <h2 class="text-xl font-bold mt-4 text-white">Platinum Pass</h2>
+                        <p class="mt-2 text-gray-300">Aluguel de até 10 jogos por duração (mensal, trimestral ou semestral), com frete grátis para entrega e devolução. Escolha quais jogos deseja receber entre os disponíveis ou escolha entre diversos temas e possibilidades para se divertir, conhecer ou matar a saudade!</p>
+                        <p class="mt-2 text-lg font-semibold text-gray-200">Valor: <br> a partir de R$ 149,90</p>
+                    </div>
+                </div>   
+
+            </section>
+
+            <section class="testimonials-container" id="testimonials">
+                <h1 class="testimonialsTitle">O que nossos clientes dizem:</h1>
+                
+                <div id="testimony-container">
+                </div>
+            </section>
+            
+            <section class="contact-container" id="contact">
+                <h1>Gostou do que acabou de conhecer? Entre em contato conosco!</h1>
+                <div class="email-form">
+                    <form id="contact-form" class="contact-form">
+                        <input type="hidden" name="contact_number" value="697483">
+                        <label>Nome:</label>
+                        <input type="text" name="user_name" placeholder="Ex.: Fulano da Silva" required>
+                        <label>E-mail:</label>
+                        <input type="email" name="user_email" placeholder="Ex.: fulanodasilva@gmail.com" required>
+                        <label for="options">Tipo de contato:</label>
+                        <select name="option" class="options" required>
+                            <option value="">Escolha uma opção a seguir:</option>
+                            <option value="testemunho">Quero registrar um testemunho</option>
+                            <option value="adquirir-servico">Quero adquirir o serviço</option>
+                            <option value="solicitar-jogo">Quero solicitar um jogo</option>
+                        </select>
+                        <label>Mensagem:</label>
+                        <textarea name="message" required></textarea>
+                        <input type="submit" class="submit-input" value="Enviar">
+                    </form>
+                </div>
+            </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h1>Siga-nos em nossas redes:</h1>
+                <a href="https://pt-br.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://x.com/home" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            
+            <div class="legal-terms">
+                <a href="#">Termos de uso</a>
+                <span>|</span>
+                <a href="#">Política de privacidade</a>
+            </div>
+            
+            <div class="rights">
+                <p>&copy; 2024 RetroRentals - Todos os direitos reservados</p>
+            </div>
+            
+            <div class="personal-info">
+                <p>Feito com ❤️ para a <strong> atividade 4 do módulo 3 - Front End da Trilha Dev FullStack Junior da +PraTi/CodificaEdu</strong>.</p>
+                <a href="https://github.com/vanmc" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/vanessamcgcoutinho/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
