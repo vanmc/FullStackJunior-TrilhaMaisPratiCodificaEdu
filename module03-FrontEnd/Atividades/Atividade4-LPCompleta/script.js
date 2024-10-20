@@ -61,7 +61,7 @@ const fetchTestimonials = async (testimonyContainer) => {
 document.addEventListener("DOMContentLoaded", function() {
   const testimonyContainer = document.getElementById('testimony-container')
 
-  // Inicializando Typed.js
+  // Inicializa o Typed.js
   var typed = new Typed('#element', {
       strings: ["Quer jogar aquele companheiro de antigamente?", "RetroRentals.com"],
       typeSpeed: 80,
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
       loopCount: Infinity,
   });
 
-  // Inicializando Swiper.js
+  // Inicializa o Swiper.js
   const swiper = new Swiper('.swiper', {
       autoplay: {
           delay: 3000,
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Inicializa a API AOS para animação dos testemunhos
   AOS.init();
 
-  // Chama a função da API de testemunhos
+  // Inicializa a função da API de testemunhos
   fetchTestimonials(testimonyContainer);
 
 // Inicializa a API EmailJS

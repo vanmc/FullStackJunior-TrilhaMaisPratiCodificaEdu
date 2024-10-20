@@ -517,6 +517,10 @@ header .btn {
         align-items: center;
         justify-content: center;
     }
+
+    .firstpage-container {
+        height: 50%;
+    }
     
     .firstpageTitle {
         font-size: 2.5em;
