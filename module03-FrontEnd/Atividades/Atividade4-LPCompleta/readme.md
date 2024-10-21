@@ -5,7 +5,7 @@
 **Sobre a página:** RetroRentals é uma página moderna para serviço de aluguel de mídias físicas de jogos clássicos. Ela permite que usuários conheçam os serviços da plataforma, visualizem depoimentos de clientes e entrem em contato através de um formulário funcional.
 
 ## Como acessar o projeto localmente:
-**Acesse a [página!](https://retrorentals.vercel.app/).**
+🍀 **Acesse a [página!](https://retrorentals.vercel.app/).**
 
 Ou, se preferir: 
 
