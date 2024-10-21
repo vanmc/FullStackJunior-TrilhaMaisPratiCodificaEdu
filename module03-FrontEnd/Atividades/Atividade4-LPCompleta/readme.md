@@ -26,7 +26,7 @@ Ou, se preferir:
 - **Slider de Jogos:** Uma galeria interativa de jogos clássicos com navegação automática.
 - **Depoimentos Dinâmicos:** Consumo de uma API externa para gerar depoimentos fictícios com imagens e nomes aleatórios.
 - **Formulário de Contato:** Integração com a API EmailJS para envio de mensagens, com validação de campos.
-- - **Responsividade:** O design é totalmente responsivo e adaptável a dispositivos móveis e desktops, utilizando media queries para ajustar o layout.
+- **Responsividade:** O design é totalmente responsivo e adaptável a dispositivos móveis e desktops, utilizando media queries para ajustar o layout.
 
 ## APIs Utilizadas
 
