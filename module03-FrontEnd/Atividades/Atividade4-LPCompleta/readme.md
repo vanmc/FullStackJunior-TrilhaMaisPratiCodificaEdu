@@ -33,7 +33,7 @@ Ou, se preferir:
 - **[Random User Generator API:](https://randomuser.me/)** Utilizada para gerar imagens e nomes aleatórios nos depoimentos de clientes.
   
 - **[EmailJS:](https://www.emailjs.com/)** Usada para envio de e-mails através do formulário de contato.
-- - **[Google Fonts:](https://fonts.google.com/)** Utilizada para incorporar as fontes Comfortaa e Nunito ao design da página.
+- **[Google Fonts:](https://fonts.google.com/)** Utilizada para incorporar as fontes Comfortaa e Nunito ao design da página.
 
 ## Bibliotecas Externas
 
@@ -49,5 +49,5 @@ Ou, se preferir:
 
 - **[TailwindCSS (v3.4.13):](https://tailwindcss.com/)** Framework CSS utilitário que facilita a criação de layouts responsivos.
 
-# Demais tec# Demais tecnologias usadas:
+# Demais tecnologias usadas:
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,git)](https://skillicons.dev)
