@@ -26,6 +26,8 @@ Para que o código funcione localmente, é necessário seguir as suas instruçõ
 <ol>
   <li> <a href = "https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/tree/432bc0e5d6b4cbd3a7f4ce8cb81b18e22e13f02c/module03-FrontEnd/Atividades/Atividade3-PagWebSimples">Página Web simples - Projeto Adote um Amigo.</a>
   </li>
+  <li><a href = "https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/tree/main/module03-FrontEnd/Atividades/Atividade4-LPCompleta">Landing Page - RetroRentals</a>
+  </li>
  
 </ol>
 
