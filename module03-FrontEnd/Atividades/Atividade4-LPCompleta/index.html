@@ -21,6 +21,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     
     <title>RetroRentals</title>
+
+    <!-- Script EMAILJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "2q3B_pAEg1YId3oFW",
+  });
+})();
+</script>
 </head>
 <body>
     <div class="firstpage-container" id="hey">
@@ -224,21 +236,20 @@
                 <h1>Gostou do que acabou de conhecer? Entre em contato conosco!</h1>
                 <div class="email-form">
                     <form id="contact-form" class="contact-form">
-                        <input type="hidden" name="contact_number" value="697483">
                         <label>Nome:</label>
-                        <input type="text" name="user_name" placeholder="Ex.: Fulano da Silva" required>
+                        <input type="text" name="user_name" id="name" placeholder="Ex.: Fulano da Silva" required>
                         <label>E-mail:</label>
-                        <input type="email" name="user_email" placeholder="Ex.: fulanodasilva@gmail.com" required>
+                        <input type="email" name="user_email" id="email" placeholder="Ex.: fulanodasilva@gmail.com" required>
                         <label for="options">Tipo de contato:</label>
-                        <select name="option" class="options" required>
+                        <select name="option" class="options" id="option" required>
                             <option value="">Escolha uma opção a seguir:</option>
                             <option value="testemunho">Quero registrar um testemunho</option>
                             <option value="adquirir-servico">Quero adquirir o serviço</option>
                             <option value="solicitar-jogo">Quero solicitar um jogo</option>
                         </select>
                         <label>Mensagem:</label>
-                        <textarea name="message" required></textarea>
-                        <input type="submit" class="submit-input" value="Enviar">
+                        <textarea name="message" id="message" required></textarea>
+                        <input type="submit" class="submit-input" value="Enviar" onclick="sendMail()">
                     </form>
                 </div>
             </section>
