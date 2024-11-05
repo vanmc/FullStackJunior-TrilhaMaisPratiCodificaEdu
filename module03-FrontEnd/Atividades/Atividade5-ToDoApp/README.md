@@ -1,16 +1,16 @@
 # Atividade 5 - To Do App
 
-**Sobre a atividade:**Desenvolva uma aplicação simples de lista de tarefas (todoApp) utilizando HTML, CSS (Bootstrap/Tailwind) e JavaScript, com armazenamento de dados no localStorage. O projeto deve permitir a criação, leitura, edição e exclusão de tarefas, além de persistir as informações no localStorage, para que elas não sejam perdidas ao recarregar a página.
+**Sobre a atividade:** Desenvolva uma aplicação simples de lista de tarefas (todoApp) utilizando HTML, CSS (Bootstrap/Tailwind) e JavaScript, com armazenamento de dados no localStorage. O projeto deve permitir a criação, leitura, edição e exclusão de tarefas, além de persistir as informações no localStorage, para que elas não sejam perdidas ao recarregar a página.
 
 ## Como acessar o projeto localmente:
 
-🍀 **Acesse a [página!](https://todoapp-phi-pink.vercel.app/).**
+🍀 **Acesse a [página!](https://todoapp-ativ5.vercel.app).**
 
 Ou, se preferir: 
 
 1. **Clone o repositório** ou baixe os arquivos do projeto:
     ```bash
-    git clone <URL-do-repositório>
+    git clone <https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/tree/main/module03-FrontEnd/Atividades/Atividade5-ToDoApp>
     ```
 
 2. **Instale o Tailwind CSS no terminal** via npm:
