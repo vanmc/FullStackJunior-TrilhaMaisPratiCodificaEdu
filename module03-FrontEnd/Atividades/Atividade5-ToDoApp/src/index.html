@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <title>ToDoApp</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <main class="flex flex-grow items-center justify-center">
+        <section class="container min-w-fit w-[70em] max-w-full p-12 m-auto backdrop-blur rounded shadow-md flex flex-col items-center">
+            <h1 class="text-2xl font-bold mb-4 text-center text-[#efe6dd]">To Do App</h1>
+
+            <!-- Adicionar nova tarefa -->
+            <div class="mb-1 flex w-full">
+                <input type="text" id="taskInput" placeholder="Digite sua nova tarefa:" class="w-full p-4 m-2 rounded text-[#bb4430] text-wrap" maxlength="100">
+                <button id="addTaskBtn" onclick="addTask()" class="bg-[#231f20] text-neutral-300 w-fit h-fit text-nowrap m-2 p-4 rounded shadow-sm transition-all duration-200 ease-in-out hover:border-2 hover:border-[#bb4430] ml-2">Salvar Tarefa</button>
+            </div>
+
+            <ul id="taskList" class="w-full mt-4 list-none p-0">                
+                <!-- Lista as tarefas adicionadas diretamente pelo JS -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full flex flex-col items-center bg-[#201D1D] text-[#F8F5F1] text-center py-1 mt-8">
+        <p class="mt-1 text-sm font-sans">
+            Feito com ❤️ para a <strong>atividade 5 do módulo 3 - Front End da Trilha Dev FullStack Junior da +PraTi/CodificaEdu</strong>.
+        </p>
+        <p class="mt-1 text-sm text-[#F8F5F1]">
+            Obrigada por visitar! &copy; 2024 Vanessa Coutinho - Todos os direitos reservados.
+        </p>
+        <div id="socialLinks" class="flex justify-center my-1">
+            <a href="https://github.com/vanmc" target="_blank" class="mx-1 p-1 transition-all duration-200 ease-in-out rounded-full text-[#F8F5F1] hover:text-[#201D1D] hover:scale-50">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/vanessamcgcoutinho/" target="_blank" class="mx-1 p-1 transition-all duration-200 ease-in-out rounded-full text-[#F8F5F1] hover:text-[#201D1D] hover:scale-50">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
