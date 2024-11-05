@@ -4,7 +4,7 @@
 
 ## Como acessar o projeto localmente:
 
-🍀 **Acesse a [página!]().**
+🍀 **Acesse a [página!](https://todoapp-phi-pink.vercel.app/).**
 
 Ou, se preferir: 
 
@@ -13,7 +13,7 @@ Ou, se preferir:
     git clone <URL-do-repositório>
     ```
 
-2. **Instale o Tailwind CSS** via npm:
+2. **Instale o Tailwind CSS no terminal** via npm:
     ```bash
     npm install -D tailwindcss
     ```
@@ -49,7 +49,7 @@ Ou, se preferir:
 
 ## Frameworks e Tecnologias Usadas
 
-- **TailwindCSS:** Utilizado para estilização com classes utilitárias, facilitando a criação de um layout responsivo.
+- **[TailwindCSS:](https://tailwindcss.com/)** Utilizado para estilização com classes utilitárias, facilitando a criação de um layout responsivo.
 
 ## Estrutura de Arquivos
 
