@@ -4,7 +4,7 @@
 
 ## Como acessar o projeto localmente:
 
-🍀 **Acesse a [página!](https://todoapp-ativ5.vercel.app).**
+🍀 **Acesse a [página!](https://todoapp-a5.vercel.app/).**
 
 Ou, se preferir: 
 
