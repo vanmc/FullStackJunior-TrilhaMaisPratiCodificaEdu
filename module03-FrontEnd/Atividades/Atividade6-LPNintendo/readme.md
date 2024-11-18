@@ -5,13 +5,13 @@
  **Sobre o projeto:** **Gaming Website Landing Page** é uma página interativa voltada para fãs de jogos da Nintendo. Ela apresenta informações sobre jogos populares como *Super Mario Odyssey*, *Pokémon Legends: Arceus* e *The Legend of Zelda: Breath of the Wild*, além de oferecer trailers, descrições detalhadas e links para compra.
 
 ## Como acessar o projeto localmente:
-🍀 **Acesse a [página!]().**
+🍀 **Acesse a [página!](https://gamingwebsite-theta.vercel.app/).**
 
 Ou, se preferir: 
 
 1. Clone o repositório:
     ```bash
-    git clone <>
+    git clone https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/tree/276d32053e643c70568467d811fc09541c340964/module03-FrontEnd/Atividades/Atividade6-LPNintendo
     ```
 
 2. Navegue até o diretório do projeto:
