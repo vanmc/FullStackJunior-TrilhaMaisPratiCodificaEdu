@@ -6,7 +6,7 @@
 
 1. Clone o repositório:
     ```bash
-    git clone
+    git clone https://github.com/vanmc/FullStackJunior-TrilhaMaisPratiCodificaEdu/tree/8472a88fa7d727006a178159efb1a50019403e83/module04-ReactJS/Atividades/Atividade7-ConceitosEssenciais
     ```
 
 2. Navegue até o diretório do projeto:
