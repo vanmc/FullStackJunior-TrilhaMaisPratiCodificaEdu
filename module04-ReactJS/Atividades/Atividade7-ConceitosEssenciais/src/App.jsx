@@ -7,11 +7,15 @@ import ToDoListPage from './pages/ToDoListPage'
 import TimerPage from './pages/TimerPage'
 import ListFilterPage from './pages/ListFilterPage'
 import RegistrationFormPage from './pages/RegistrationFormPage'
+import DataFetcherPage from './pages/DataFetcherPage'
+import ImageGalleryPage from './pages/ImageGalleryPage'
+import CountdownTimerPage from './pages/CountdownTimerPage'
+import TabsPage from './pages/TabsPage'
 
 import './App.css'
 
 function Navigation() {
-  const location = useLocation() // Hook para acessar a localização atual
+  const location = useLocation() // Hook para acessar a localização atual, permitindo o uso do css active
 
   return (
     <nav>
@@ -34,6 +38,10 @@ function Navigation() {
         <li id='six' className={location.pathname === '/RegistrationForm' ? 'active' : ''}>
           <Link to="/RegistrationForm">Formulário de Registro Simples</Link>
         </li>
+        <li id='seven' className={location.pathname === '/DataFetcher' ? 'active' : ''}><Link to="/DataFetcher">Aplicação de Requisição de Dados Simples</Link></li>
+        <li id='eight' className={location.pathname === '/ImageGallery' ? 'active' : ''}><Link to="/ImageGallery">Galeria de Imagens</Link></li>
+        <li id='nine' className={location.pathname === '/CountdownTimer' ? 'active' : ''}><Link to="/CountdownTimer">Timer com Intervalo e Alerta</Link></li>
+        <li id='ten' className={location.pathname === '/Tabs' ? 'active' : ''}><Link to="/Tabs">Tabs Navegáveis</Link></li>
       </ul>
     </nav>
   )
@@ -51,6 +59,10 @@ function App() {
           <Route path="/Timer" element={<TimerPage />} />
           <Route path="/ListFilter" element={<ListFilterPage />} />
           <Route path="/RegistrationForm" element={<RegistrationFormPage />} />
+          <Route path="/DataFetcher" element={<DataFetcherPage />} />
+          <Route path="/ImageGallery" element={<ImageGalleryPage />} />
+          <Route path="/CountdownTimer" element={<CountdownTimerPage />} />
+          <Route path="/Tabs" element={<TabsPage />} />
         </Routes>
       </main>
     </Router>
