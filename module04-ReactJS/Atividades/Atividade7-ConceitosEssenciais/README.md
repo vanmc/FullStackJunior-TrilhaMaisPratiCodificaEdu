@@ -63,22 +63,22 @@
 - Exibe uma mensagem de boas-vindas ao submeter o formulário.
 - Inclui validações para garantir que todos os campos estejam preenchidos antes do envio.
 
-7. Aplicação de Requisição de Dados Simples (a ser implementada - última atualização 19/11):
+7. Aplicação de Requisição de Dados Simples:
 - Exibe uma lista de posts obtidos da API pública **JSONPlaceholder**.
 - Inclui um botão para recarregar os dados e um indicador de carregamento.
 - Utiliza **useEffect** para realizar a requisição de dados.
 
-8. Galeria de Imagens (a ser implementada - última atualização 19/11):
+8. Galeria de Imagens:
 - Galeria com imagens clicáveis para exibição ampliada em um modal.
 - Inclui botões para fechar o modal e navegar entre as imagens.
 - Utiliza **useState** para gerenciar a imagem selecionada.
 
-9. Timer com Intervalo e Alerta (a ser implementada - última atualização 19/11):
+9. Timer com Intervalo e Alerta:
 - Timer que permite ao usuário definir o tempo para contagem regressiva.
 - Inclui botões para pausar e reiniciar o timer.
 - Exibe um alerta ao finalizar a contagem.
 
-10. Tabs navegáveis (a ser implementada - última atualização 19/11):
+10. Tabs navegáveis:
 - Interface com abas ("tabs") que exibem diferentes conteúdos ao serem clicadas.
 - Destaca visualmente a aba ativa.
 - Utiliza **useState** para controlar a aba ativa.
