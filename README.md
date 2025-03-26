@@ -31,8 +31,8 @@ Para que o código funcione localmente, é necessário seguir as suas instruçõ
  
 </ol>
 
-## :computer: Projetos:
-<img src = "https://media1.tenor.com/m/iCqG_iT-h48AAAAC/bills-ugh.gif" alt = "Cat Typing Gif" width = "40" height = "40"> <em> Ainda serão adicionados! </em>
+## :computer: Projeto Final:
+<img src = "https://media1.tenor.com/m/iCqG_iT-h48AAAAC/bills-ugh.gif" alt = "Cat Typing Gif" width = "40" height = "40"> <em> <a href="https://github.com/AlexandreDresch/StellioCode">StellioCode </a></em>
 
 ## Exercícios de reforço:
 <ol>
